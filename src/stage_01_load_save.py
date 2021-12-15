@@ -1,6 +1,6 @@
 import os.path
 
-from utils.all_utils import read_yaml, create_directory
+from src.utils.all_utils import read_yaml, create_directory
 import argparse
 import pandas as pd
 
