@@ -1,4 +1,8 @@
 stages:
+  # In order to run a stage or file every time we run dvc repro command
+  # we should not mention deps(dependencies) then it will always run
+  always_run:
+    cmd: python rough/test01.py
   load_data:
     cmd: python src/stage_01_load_save.py --config=config/config.yaml
     deps:
